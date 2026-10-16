@@ -1,0 +1,59 @@
+# XNODE MDBA XNODE MDBA YouthBridge v7.4 — Judge Demonstration Guide
+
+**Independent, unofficial educational prototype.** YouthBridge is not operated or endorsed by MDBA. All identities, sponsor approvals, scores, and projects in this demonstration are fictional. No official hackathon submission is made.
+
+## One-minute overview
+YouthBridge helps Grade 10–12 learners turn a community problem into a hackathon idea through guided missions, STEM examples, a no-code interface builder, pitch practice, and supportive feedback. The optional local account pilot illustrates separate student, sponsor, mentor, and administrator workflows.
+
+## Before judges arrive (2 minutes)
+1. Unzip the project. Install Python 3.10+ (standard library only).
+2. Open a terminal in the extracted folder and run `python run_demo.py`.
+3. Open `http://127.0.0.1:8080/` on the same computer.
+4. Open `JUDGE_GUIDE.html` separately as the presentation reference.
+5. Keep a terminal visible only if demonstrating sponsor confirmation. Do **not** use real names, emails, or passwords.
+6. For quick readiness confirmation, run `python smoke_test.py` in another terminal.
+
+## Five-minute judge walkthrough
+| Time | Action | What to explain |
+|---|---|---|
+| 0:00–0:40 | Open Home → Practice Lab | Beginner-friendly access without an account |
+| 0:40–1:25 | Open Start Here / guided demo | Structured guidance for first-time participants |
+| 1:25–2:10 | Explore STEM example projects | Six project tracks and reusable starter ideas |
+| 2:10–3:10 | Open No-Code App Studio | Add/edit blocks and view the prototype preview; exported HTML is a static mockup |
+| 3:10–4:10 | Open pitch builder and submission checker | Students can practice explaining a solution and checking completeness |
+| 4:10–5:00 | Show student/mentor pilot landing pages | Explain role separation and sponsor gate as **simulated approval**, not verified consent |
+
+If a particular tab is labeled differently in the UI, use the closest equivalent in the Practice Lab. Do not claim a function works without showing it.
+
+## Optional extended 3-minute account demonstration
+1. Choose **Join** and register a fictional Grade 10–12 student using non-deliverable example addresses (e.g., `student@example.test`, `sponsor@example.test`).
+2. A demonstration approval URL appears in the server terminal when SMTP is not configured. Open it and confirm. This proves possession of a link **only**, not guardian identity or consent.
+3. Sign in as the fictional student and submit a short sample project summary.
+4. To demonstrate mentor/admin roles, stop the server, run `python server.py create-mentor` or `python server.py create-admin`, then restart it. Use fictional credentials.
+5. Sign in as a mentor to provide feedback or as an admin to view counts.
+
+## Suggested sample project
+**Title:** School Recycling Helper
+**Track:** Sustainability
+**Problem:** Students struggle to identify the right recycling bin.
+**Solution:** A simple screen showing clear recycling guidance and local collection information.
+**Audience:** Learners and school staff.
+**Prototype:** Three-screen static mockup: choose item → see bin → learn why.
+
+## Suggested judging questions and evidence
+- **Accessibility:** Show large-text / reduced-motion options where available. Full WCAG audit is not complete.
+- **Privacy:** Practice Lab can be used without an account. The account pilot is for fictional records only.
+- **Feasibility:** Single-machine Python + SQLite demo, no external dependency needed for core functionality.
+- **Impact:** Supports ideation and presentation; no learning outcomes have been independently measured.
+- **AI:** The offline idea coach is rules-based. Do not present it as a connected generative AI service.
+- **Blockchain:** Blockchain is a learning track; this pilot does not prove on-chain transactions.
+
+## Limitations and safeguards
+- Not affiliated with the Maryland Blockchain Association or Blockchain Legal Institute.
+- No production guardian verification, no real sponsor identity verification, and no legally validated consent flow.
+- No live hackathon registration, official judging, certificates, or submissions.
+- No public hosting, HTTPS termination, account recovery, production moderation, or completed penetration test.
+- No real student data. Do not forward public URLs to minors.
+
+## Next steps for a real pilot
+Complete safeguarding/privacy review, adult verification and consent withdrawal, secure deployment and audit, accessibility testing, data retention policy, and independent penetration testing. See `DEPLOYMENT_READINESS.md`.

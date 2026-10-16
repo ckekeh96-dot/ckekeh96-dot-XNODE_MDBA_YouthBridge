@@ -1,0 +1,4 @@
+pilot.sqlite3
+.env
+__pycache__/
+*.pyc
