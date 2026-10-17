@@ -2,3 +2,6 @@ pilot.sqlite3
 .env
 __pycache__/
 *.pyc
+static/check.txt
+static/quote_positions.txt
+static/smart_quotes_check.txt
