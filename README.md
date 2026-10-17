@@ -40,4 +40,4 @@ The app is **not** production-ready, and sponsor-link confirmation is **not** id
 - All navigation links open the corresponding existing Practice Lab page or local account dashboard. Practice Lab deep links use a validated URL fragment.
 - Existing Python student, sponsor, mentor and admin workflows are retained. No fictional leaderboard scores or real community users are fabricated.
 - This is a visual adaptation of the reference, not a pixel-identical copy. Existing bundled images are used for the cards and hero.
-- Run `python run_demo.py` and visit http://127.0.0.1:8080/ .
+- Run `python run_demo.py` and visit http://127.0.0.1:8081/ .
