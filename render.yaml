@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: xnode-youthbridge
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: ""
+    startCommand: python server.py
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: YB_SECURE_COOKIES
+        value: 0
+      - key: YB_PUBLIC_BASE_URL
+        sync: false
